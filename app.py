@@ -45,6 +45,10 @@ def read_dbda_data():
     return locker_data
 
 
+@app.route('/', methods=["GET"])
+def index():
+    return render_template('index.html')
+
 @app.route('/ditiss')
 def ditiss():
     locker_data = read_ditiss_data()
