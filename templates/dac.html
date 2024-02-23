@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Lockers</title>
+</head>
+<body>
+    <h1>DAC-Student Lockers</h1>
+    <table border="1">
+        <tr>
+            <th>Sr. No</th>
+            <th>Roll No</th>
+            <th>Student Name</th>
+            <th>Group</th>
+            <th>Gender</th>
+            <th>Locker Number</th>
+        </tr>
+        {% for student in locker_data %}
+        <tr>
+            <td>{{ student['Sr. No'] }}</td>
+            <td>{{ student['Roll No'] }}</td>
+            <td>{{ student['Student Name'] }}</td>
+            <td>{{ student['Group'] }}</td>
+            <td>{{ student['Gender'] }}</td>
+            <td>{{ student['Locker Number'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
